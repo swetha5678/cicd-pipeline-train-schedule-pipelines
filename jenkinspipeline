@@ -1,0 +1,12 @@
+pipeline {
+agent any
+stage {
+stage ('build')}
+steps {
+echo "Running build automation"
+sh '_/gradlew build --no-demon
+archieveArtifacts artifacts:'dist/trainSchedule.zip
+}
+}
+}
+}
